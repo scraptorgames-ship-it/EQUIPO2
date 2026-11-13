@@ -184,7 +184,10 @@ def eliminar_cuadrado():
         except mysql.connector.Error as error:
             messagebox.showerror("Error", str(error))
 
-
+# Frida Daniela Morales Entzana : agrego el boton Limpiar para borrar la lista en pantalla
+def limpiar_lista():
+    lista.delete(0, tk.END)
+    
 # VENTANA PRINCIPAL
 ventana_principal = tk.Tk()
 ventana_principal.title("Cuadrados")
