@@ -187,7 +187,10 @@ def eliminar_cuadrado():
 # Frida Daniela Morales Entzana : agrego el boton Limpiar para borrar la lista en pantalla
 def limpiar_lista():
     lista.delete(0, tk.END)
-    
+# Beatriz Adriana Tolentino Teco: agrego el boton Salir para cerrar el programa
+def salir_programa():
+    ventana_principal.destroy()    
+
 # VENTANA PRINCIPAL
 ventana_principal = tk.Tk()
 ventana_principal.title("Cuadrados")
@@ -241,7 +244,7 @@ tk.Button(
     text="Actualizar",
     width=12,
     command=actualizar_cuadrado
-).grid(row=0, column=1, padx=5)
+).grid(row=0, column=1, padx=
 
 tk.Button(
     botones,
@@ -256,6 +259,13 @@ tk.Button(
     text="Limpiar",
     width=12,
     command=limpiar_lista
+).grid(row=0, column=3, padx=5)
+# Beatriz Adriana Tolentino Teco: agrego el boton Salir para cerrar el programa
+tk.Button(
+    botones,
+    text="Salir",
+    width=12,
+    command=salir_programa
 ).grid(row=0, column=3, padx=5)
 
 ventana_principal.mainloop()
