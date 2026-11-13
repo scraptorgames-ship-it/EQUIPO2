@@ -250,4 +250,12 @@ tk.Button(
     command=eliminar_cuadrado
 ).grid(row=0, column=2, padx=5)
 
+# Frida Daniela Morales Entzana: agrego el boton Limpiar
+tk.Button(
+    botones,
+    text="Limpiar",
+    width=12,
+    command=limpiar_lista
+).grid(row=0, column=3, padx=5)
+
 ventana_principal.mainloop()
